@@ -1,16 +1,10 @@
 # (mg)framework ignore 
-tools/*
-!tools/composer/*
-!tools/shared/*
-
-# (other)
 log/
 cache/
-
-# (platform)
 platform/cron.lock
-
-# (applications)
 applications/*
 !applications/shared/
 !applications/framework/
+tools/*
+!tools/composer/
+!tools/shared/
