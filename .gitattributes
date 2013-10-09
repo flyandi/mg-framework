@@ -1,0 +1,7 @@
+# Attributes for mg-framework
+*			text=auto
+*.css		text
+*.js		text
+*.php		text
+*.snippet	text	diff=html
+*.template	text	diff=html
