@@ -40,8 +40,24 @@
 		exit;
 	}
 	
+	$object = sprintf("objects/%s/", $cmAction);
+	if(!is_dir($object)) {
+		ConOut("-- Object %s does not exists.", $cmAction);
+		exit;
+	}
+	
 	# -----------------------------------------------------------------------------------
 	# Compose
 	
+	// include
+	include(sprintf("%sobject.php", $object));
 	
+	// check function
+	if(function_exists("objectcreate")) {
+		objectcreate();
+	} else {
+		ConOut("-- Object %s does not has a valid header.", $cmAction);
+	}
+	
+
 	

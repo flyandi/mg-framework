@@ -1,0 +1,14 @@
+<VirtualHost *:80>
+	ServerName framework
+	DocumentRoot C:/Work/framework/public
+	<Directory C:/Work/framework/public>
+		AllowOverride All
+		Options All
+		RewriteEngine On
+		RewriteCond $1 !^(index\.php|\.(js|ico|gif|jp?g|png|css))
+		RewriteCond %{REQUEST_FILENAME} !-f
+		RewriteCond %{REQUEST_FILENAME} !-d
+		RewriteRule ^(.*)$ ./index.php/$1 [L,QSA]
+		ErrorDocument 404	/index.php
+	</Directory>	
+</VirtualHost>

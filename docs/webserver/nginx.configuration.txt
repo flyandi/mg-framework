@@ -1,0 +1,22 @@
+server {
+	listen          80;
+	listen          [::]:80 default_server ipv6only=on;
+	server_name     SERVERNAME
+	root            /var/www/web/framework/public;
+	access_log      /var/www/log/access.log;
+	error_log       /var/www/log/error.log;
+	index           index.php;
+
+	location / {
+			try_files $uri $uri/ /index.php?$query_string;
+		error_page 404 403 502 503 504 /index.php?$query_string;
+	}
+	
+	location ~ \.php$ {
+                try_files $uri =404;
+                #fastcgi_split_path_info ^(.+\.php)(/.+)$;
+                fastcgi_pass unix:/var/run/php5-fpm.sock;
+                fastcgi_index index.php;
+                include fastcgi_params;
+	}
+}
