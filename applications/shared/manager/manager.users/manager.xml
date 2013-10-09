@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="manager.users" name="User" version="1.0" disabled="false">
+	<requirerole requires="administrator" />
+	<actions>
+		<action label="ManagerModuleOverview" icon="user" action="default" targetview="system" />
+	</actions>
+	<grids>
+		<grid name="default">
+			<column name="ColumnUsername" field="idusername" width="auto" sortable="true" />
+			<column name="ColumnType" field="idtype" width="80" sortable="true" format="option" option="user.typenames" />
+			<column name="ColumnRole" field="role" width="80"  format="option" option="user.groupnames"/>
+			<column name="ColumnStatus" field="status" width="80" format="option" option="user.statusnames" />
+			<column name="ColumnEnabled" field="active" type="userenabled" width="50" format="true">
+				<format value="0" label="No" />
+				<format value="1" label="Yes" />
+			</column>
+		</grid>
+	</grids>
+	<languages>
+		<language type="default" language="english" name="English">
+			<l id="ManagerModuleHeader">User Management</l>
+			<l id="ManagerModuleOverview">Users</l>
+			<l id="ManagerModuleNewUser">New User</l>
+			<l id="ColumnUserId">User ID</l>
+			<l id="ColumnUsername">Username</l>
+			<l id="ColumnType">Type</l>
+			<l id="ColumnRole">Role</l>
+			<l id="ColumnStatus">Status</l>
+			<l id="ColumnEnabled">Enabled</l>
+			<l id="ColumnFirstname">Firstname</l>
+			<l id="ColumnLastname">Lastname</l>
+		</language>
+	</languages>	
+</module>

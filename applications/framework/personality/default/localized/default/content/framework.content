@@ -1,0 +1,91 @@
+<div class="-bn-interface -corner-all">
+	<ul class="-bn-interface-tabs">
+		<li class="-corner-top selected">{%InterfaceTabNotifyList}</li>
+		<li class="-corner-top">{%InterfaceTabNotification}</li>
+		<li class="-corner-top">{%InterfaceTabSettings}</li>
+	</ul>
+	<div class="-bn-notify-button -corner-all" title="{%InterfaceTabNotifyTitle}"touch="bnSendNotification"><span></span>{%InterfaceTabNotify}</div>
+	<div class="-clear"></div>
+	<div class="-bn-interface-pages -corner-bottom -corner-right">
+		<div class="-bn-interface-page">
+			<div class="-leftcontent">
+				<ul class="-bn-interface-notifylist">
+					<li>
+						<div class="infopanel">
+							<span class="notificationlistcounter -bn-number -corner-all-small">0</span>{%InterfaceContactListText}
+						</div>
+						<div class="-clear"></div>
+						<div class="toolbar">
+							<div class="-bn-button" touch="bnRegistryAdd">{%InterfaceNotifyListAdd}</div>
+							<div class="-bn-button" touch="bnRegistryImport">{%InterfaceNotifyListImport}</div>
+							<div class="-bn-button" touch="bnToogleNotificationList">{%InterfaceNotifyListShow}</div>
+						</div>
+						<div class="notificationlist -corner-left">
+						</div>
+					</li>
+					<div class="-bn-interface-service">
+						<div class="icon"></div>
+						<div class="message">
+							<div class="caption"></div>
+							<div class="subcaption"></div>
+						</div>
+						<div class="buttons">
+						</div>					
+						<div class="-clear"></div>
+					</div>
+				</ul>
+			</div>
+			<div class="-rightcontent">
+				<div class="-bn-interface-ad">
+					<div class="-ad-internal -corner-all">
+						{&snippet:mobiledownloadshort}
+					</div>
+				</div>
+			</div>
+			<div class="-clear"></div>
+		</div>
+		
+		<div class="-bn-interface-page" style="display:none">
+			<div class="-bn-interface-notify-settings hasfields">
+				<ul class="settings-tabs">
+					<li class="selected -corner-top">{%InterfaceSettingsTabInfo}</li>
+					<li class="-corner-top">{%InterfaceSettingsTabColor}</li>
+					<li class="-corner-top">{%InterfaceSettingsTabPreview}</li>
+				</ul>
+				<div class="-clear"></div>
+				<div class="settings-page settings-page-info">
+				
+				</div>
+				<div class="settings-page settings-page-color" style="display:none">
+					
+				</div>
+				<div class="settings-page settings-page-preview" style="display:none">
+					
+				</div>
+			</div>
+			
+			
+			<div class="-bn-interface-notify-actions">
+				<div class="preview-container -corner-all">
+				</div>
+			</div>
+			<div class="-clear"></div>
+		</div>
+		<div class="-bn-interface-page" style="display:none">
+			<div class="-leftcontent">
+				<div class="-bn-interface-settings hasfields">
+			
+				</div>
+			</div>
+			<div class="-rightcontent">
+				<div class="-bn-interface-ad">
+					<div class="-ad-internal -corner-all">
+						{&snippet:mobiledownloadshort}
+					</div>
+				</div>
+			<div>
+			<div class="-clear"></div>
+		</div>
+	</div>
+	<div class="-clear"></div>
+</div>	

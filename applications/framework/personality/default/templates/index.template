@@ -1,0 +1,7 @@
+<div class="-container">
+	{&snippet:menu,usermenu}
+	<div class="-content">
+		{CONTENT}
+	</div>
+	{&snippet:footer}
+</div>

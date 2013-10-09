@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component id="component.manager" name="manager" version="1.0">
+	<includes name="managercontrols" />
+</component>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="manager.personality" name="Personality" version="1.0" disabled="false">
+	<requirerole requires="administrator" />
+	<actions>
+		<action label="ManagerModuleHeader" icon="cup" action="default" targetview="system" />
+	</actions>
+	<grids>
+		<grid name="default">
+			<column name="ColumnName" field="description" width="auto" sortable="true" />
+			<column name="ColumnDomain" field="domain" width="auto" />
+			<column name="ColumnEnabled" field="active" type="userenabled" width="50" format="true">
+				<format value="0" label="No" />
+				<format value="1" label="Yes" />
+			</column>
+		</grid>
+		<grid name="templates">
+			<column name="ColumnName" field="name" width="auto" />
+			<column name="ColumnReference" field="reference" width="auto" />
+			<column name="ColumnType" field="type" width="80" />
+			<column name="ColumnFormat" field="format" width="80" />
+		</grid>
+		<grid name="requests">
+			<column name="ColumnRequest" field="request" width="auto" />
+			<column name="ColumnType" field="type" width="auto" />
+			<column name="ColumnValue" field="value" width="auto" />
+			<column name="ColumnEnabled" field="enabled" width="50" format="true">
+				<format value="0" label="No" />
+				<format value="1" label="Yes" />
+			</column>
+		</grid>
+		<grid name="contents">
+			<column name="ColumnName" field="name" width="auto" />
+			<column name="ColumnTemplate" field="template" width="auto" />
+			<column name="ColumnReference" field="reference" width="auto" />
+		</grid>
+		<grid name="snippets">
+			<column name="ColumnName" field="name" width="auto" />
+		</grid>
+		<grid name="language">
+			<column name="ColumnName" field="id" width="auto" />
+		</grid>
+		<grid name="emails">
+			<column name="ColumnName" field="name" width="auto" />
+			<column name="ColumnTemplate" field="template" width="auto" />
+			<column name="ColumnSender" field="sender" width="auto" />
+		</grid>
+	</grids>
+	<languages>
+		<language type="default" language="english" name="English">
+			<l id="ManagerModuleHeader">Personalities</l>
+			<l id="ColumnName">Name</l>
+			<l id="ColumnDomain">Domain</l>
+			<l id="ColumnEnabled">Enabled</l>
+			<l id="ColumnReference">Reference</l>
+			<l id="ColumnType">Type</l>
+			<l id="ColumnFormat">Format</l>
+			<l id="ColumnSource">Source</l>
+			<l id="ColumnRequest">Request</l>
+			<l id="ColumnValue">Value</l>
+			<l id="ColumnTemplate">Template</l>
+			<l id="ColumnSubject">Subject</l>
+			<l id="ColumnSender">Sender</l>
+		</language>
+	</languages>	
+</module>

@@ -1,0 +1,9 @@
+{body=setclass('-framework-message')}
+<div class="-framework-message -defaultborder -defaultfont -corner-all">
+	<div class="-inner-content">
+		<h1>{header}</h1>
+		<span>
+			{text}
+		</span>
+	</div>
+</div>

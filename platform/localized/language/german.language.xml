@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language type="system" language="de" name="German" version="1.0">
+
+	<!-- (system) Text //-->
+	<l id="SystemTextDisabled">Aktivieren</l>
+	<l id="SystemTextEnabled">Deaktivieren</l>
+	
+	<!-- (system) Browser Support //-->
+	<l id="BrowserNotSupportedTitle">Ihr Browser ist nicht unterst##uuml;zt</l>
+	<l id="BrowserNotSupportedText">Your browser is not meeting the minimum to run this web application. Please upgrade your browser to the latest version or use a copy of the current FireFox, Safari, Google Chrome or Internet Explorer.</l>
+	
+	<!-- (system) Maintenance //-->
+	<l id="MaintenanceTitle">Under Maintenance</l>
+	<l id="MaintenanceText">This website is currently under maintenance. We applogize for any inconvience.</l>
+	
+	<!-- (system) Buttons //-->
+	<l id="ButtonAdd">Hinzuf##uuml;gen</l>
+	<l id="ButtonSave">Ok</l>
+	<l id="ButtonCancel">Abbrechen</l>
+	<l id="ButtonOk">Ok</l>
+	<l id="ButtonYes">Ja</l>
+	<l id="ButtonNo">Nein</l>
+	<l id="ButtonBack">Zur##uuml;ck</l>
+	<l id="ButtonImport">Importieren</l>
+	<l id="ButtonChange">##Aaml;ndern</l>
+	<l id="ButtonApply">Anwenden</l>
+	<l id="ButtonClose">Schlie##szlig;en</l>
+	<l id="ButtonClear">L##ouml;schen</l>
+	<l id="ButtonCalculate">Berechnen</l>
+	<l id="ButtonCustomize">Anpassen</l>
+	<l id="ButtonContinue">Weiter</l>
+	<l id="ButtonBrowse">Ausw##auml;hlen</l>
+	<l id="ButtonPreview">Vorschau</l>
+	<l id="ButtonShare">Share</l>
+	<l id="ButtonRemove">Entfernen</l>
+	<l id="ButtonPrevious">Zur##uuml;ck</l>
+	<l id="ButtonNext">N##auml;chstes</l>
+	<l id="ButtonFinish">Beenden</l>	
+	<l id="ButtonUploadPicture">Photo hochladen</l>
+	<l id="ButtonClearPicture">Photo entfernen</l>
+	
+		
+	<!-- (system) UploadFile Identifiers [do not change] //-->
+	<l id="FileNoSelected">Keine Datei</l>
+	<l id="FileUploadError">There was an error while uploading your file.</l>
+	<l id="FileUploadErrorTitle">Upload failed!</l>
+	<l id="FileUploadErrorMime" literal="true">The selected file is not acceptable (%s). Please makes sure that the selected file meets the upload requirements.</l>
+	<l id="FileUploadErrorSize" literal="true">The selected file is exceeding the upload limit of %s (Uploaded Size: %s).</l>	
+	<l id="FileUploadError:200">The type of the uploaded file was not accepted.</l>
+	<l id="FileUploadError:201">The file size exceeded the upload limit.</l>
+	<l id="FileUploadError:202">A general error occured. Please try again later.</l>
+	<l id="FileUploadError:203">System Error 203. Please try again later.</l>
+	<l id="FileUploadError:204">Your session is expired. Please login and try again.</l>
+	<l id="FileUploadError:205">System Error 205. Please try again later.</l>
+	<l id="FileUploadError:206">System Error 206. Please try again later.</l>
+	
+	<!-- (system) Validation Errors //-->
+	<l id="ValidateViolationRequired">Please enter a value for [b]%s[/b].</l>
+	<l id="ValidateViolationNumeric">Please enter a numeric value for [b]%s[/b].</l>
+	<l id="ValidateViolationEmail">Please enter a valid E-Mail address.</l>
+	<l id="ValidateViolationMatch">The entered values for [b]%s[/b] and [b]%s[/b] do not match.</l>
+	<l id="ValidateViolationPasswordMatch">The entered passwords do not match. Please verify.</l>
+	
+	<!-- (javascript) datetimer picker localization //-->
+	<l id="DTTitleDate" literal="true">Datum ausw##auml;hlen</l>
+	<l id="DTFormatDate" literal="true">%c-%d-%Y</l>
+	<l id="DTFormatDateName" literal="true">%W, %M %e, %Y</l>
+	<l id="DTTitleDateTime" literal="true">Select Date and Time</l>
+	<l id="DTFormatDateTime" literal="true">%c-%d-%Y %l:%i %p</l>
+	<l id="DTFormatDateTimeName" literal="true">%W, %M %e, %Y %l:%i %p</l>
+	<l id="DTTitleTime" literal="true">Select Time</l>
+	<l id="DTFormatTime" literal="true">%l:%i %p</l>
+	
+	
+	<l id="DTLabelDayOfMonth" literal="true">Tag im Monat</l>
+	<l id="DTLabelHour" literal="true">Stunde</l>
+	<l id="DTLabelMinute" literal="true">Minute</l>
+	<l id="DTLabelSecond" literal="true">Sekunde</l>
+	<l id="DTLabelMonth" literal="true">Monat</l>
+	<l id="DTLabelYear" literal="true">Jahr</l>
+	
+	<!-- localizations -->
+	<l id="LocalizedDayAbbreviations" literal="true">'Son','Mon','Die','Mit','Don','Fri','Sam'</l>
+	<l id="LocalizedDayNames" literal="true">'Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'</l>
+	<l id="LocalizedFirstDayOfWeek" literal="true">1</l>
+	<l id="LocalizedMonthAbbreviations" literal="true">'Jan','Feb','M##auml;','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez'</l>
+	<l id="LocalizedMonthNames" literal="true">'Januar','Februar','M##auml;rz','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'</l>
+	<l id="LocalizedLongDateFormat" literal="true">j. F Y</l>
+	<l id="LocalizedTimeFormat" literal="true">h:i</l>
+	
+	<!-- Language Updates -->
+	<l id="ButtonShare">Share</l>
+	<l id="ButtonRemove">Remove</l>
+	<l id="ButtonPrevious">Back</l>
+	<l id="ButtonNext">Next</l>
+	<l id="ButtonFinish">Finish</l>
+</language>

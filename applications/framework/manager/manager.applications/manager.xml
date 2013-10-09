@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="manager.applications" name="Applications" version="1.0" status="enabled">
+	<requirerole requires="administrator" />
+	<actions>
+		<actiongroup label="ManagerModuleHeader" divider="true">
+			<action label="ManagerModuleOverview" icon="application" action="default" />
+		</actiongroup>
+	</actions>
+	<grids>
+		<grid name="default">
+			<column name="ColumnApplication" field="name" width="auto" sortable="true" icon="icon" />
+			<column name="ColumnVersion" field="version" width="80" />
+			<column name="ColumnStatus" field="status" width="80" format="option" option="application.statusnames" />
+		</grid>
+		<grid name="database">
+			<column name="ColumnConnection" field="name" width="auto" />
+			<column name="ColumnHost" field="parameters:host" width="auto" />
+			<column name="ColumnDatabase" field="parameters:database" width="auto" />
+			<column name="ColumnPrimary" field="primary" width="50" format="true">
+				<format value="true" label="Yes" />
+				<format value="false" label="No" />
+			</column>
+		</grid>
+	</grids>
+	<languages>
+		<language type="default" language="english" name="English">
+			<l id="ManagerModuleHeader">Applications</l>
+			<l id="ManagerModuleOverview">Overview</l>
+			<l id="ColumnApplication">Application</l>
+			<l id="ColumnVersion">Version</l>
+			<l id="ColumnStatus">Status</l>
+			<l id="ColumnConnection">Connection</l>
+			<l id="ColumnHost">Host</l>
+			<l id="ColumnUser">User</l>
+			<l id="ColumnDatabase">Database</l>
+			<l id="ColumnPrimary">Primary</l>
+		</language>
+	</languages>	
+</module>

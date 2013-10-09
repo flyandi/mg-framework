@@ -1,0 +1,14 @@
+<div class="-signin -corner-all">
+	<h2>{%SignInHeadline}</h2>
+	<div class="-form">
+		<div class="-form-error -corner-all-small" style="display:{ACTIONERROR}">
+			{ACTIONERRORLIST}
+		</div>
+		<form method="post" id="signin" action="/signin">
+			{&form:signin}
+			<div class="buttons">
+				<input class="-button -corner-all-small" type="submit" value="{%SignInSubmitButton}" />
+			</div>
+		</form>
+	</div>
+</div>

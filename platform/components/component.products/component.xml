@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component id="component.products" name="products" version="1.0">
+	<includes name="products" />
+</component>

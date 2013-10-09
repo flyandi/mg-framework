@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="manager.honeypot" name="HoneyPot" version="1.0" disabled="false">
+	<requirerole requires="administrator" />
+	<settings styles="true" />
+	<actions>
+		<action label="ManagerModuleAction" icon="folderbug" action="default" targetview="system" />
+	</actions>
+	<grids>
+		<grid name="blocked">
+			<column name="ColumnCreated" field="stampcreated" sortfield="created" />
+			<column name="ColumnTimeout" field="stamptimeout" sortfield="timeout" />
+			<column name="ColumnAddress" field="idaddress" width="100" />
+			<column name="ColumnType" field="idtype" width="100" format="true">
+				<format value="0" label="Temporary" />
+				<format value="1" label="Permanent" />
+			</column>
+			<column name="ColumnReason" field="reason" width="100" format="true">
+				<format value="0" label="Manual" />
+				<format value="1" label="User Agent" />
+				<format value="2" label="Trap" />
+				<format value="3" label="Spammer" />				
+			</column>			
+		</grid>
+		<grid name="traffic">
+			<column name="ColumnCreated" field="stampcreated" sortfield="created" />
+			<column name="ColumnTimeout" field="stamptimeout" sortfield="timeout" />
+			<column name="ColumnAddress" field="idaddress" width="100" />
+			<column name="ColumnReferer" field="referer" />		
+			<column name="ColumnUA" field="ua" />		
+		</grid>
+		<grid name="traps">
+			<column name="ColumnCreated" field="stampcreated" sortfield="created" />
+			<column name="ColumnTimeout" field="stamptimeout" sortfield="timeout" />
+			<column name="ColumnAddress" field="idaddress" width="100" />
+			<column name="ColumnType" field="idtype" width="100" format="true">
+				<format value="0" label="Request" />
+				<format value="1" label="Permanent" />
+			</column>
+			<column name="ColumnValue" field="value" />
+		</grid>		
+		<grid name="rules">
+			<column name="ColumnCreated" field="stampcreated" sortfield="created" />
+			<column name="ColumnType" field="idtype" width="120" format="true">
+				<format value="0" label="IP" />
+				<format value="1" label="User Agent" />
+				<format value="2" label="Referer" />
+			</column>
+			<column name="ColumnRule" field="rule" width="120" format="true">
+				<format value="0" label="Deny" />
+				<format value="1" label="Allow" />
+			</column>
+			<column name="ColumnValue" field="value" />
+		</grid>	
+	</grids>
+	<languages>
+		<language type="default" language="english" name="English">
+			<l id="ManagerModuleHeader">System Management</l>
+			<l id="ManagerModuleAction">HoneyPot</l>
+			<l id="ColumnCreated">Created</l>
+			<l id="ColumnTimeout">Timeout</l>
+			<l id="ColumnAddress">IP</l>
+			<l id="ColumnValue">Value</l>
+			<l id="ColumnReason">Reason</l>
+			<l id="ColumnReferer">Referer</l>
+			<l id="ColumnType">Type</l>
+			<l id="ColumnUA">User Agent</l>
+			<l id="ColumnRule">Rule</l>
+		</language>
+	</languages>	
+</module>

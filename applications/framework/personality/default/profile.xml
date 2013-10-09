@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personality version="1.0">
+
+	<profile>
+		<serial>000-0000-0000-000</serial>
+		<version>1.0</version>
+		<package>framework</package>
+		<name>Framework</name>
+	</profile>
+	
+	<web>
+		<meta>
+			<content-type>text/html; charset=iso-8859-1</content-type>
+			<content-language>en</content-language>
+			<author>BabyNotify</author>
+			<publisher>BabyNotify</publisher>
+			<audience>all</audience>
+			<keywords></keywords>
+			<description></description>
+			<robots>INDEX, FOLLOW</robots>
+			<revisit-after>1 day</revisit-after>
+			<viewport related="mobile">width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no</viewport>
+			<handheldfriendly related="mobile">true</handheldfriendly>
+			<apple-mobile-web-app-capable related="mobile">yes</apple-mobile-web-app-capable>
+		</meta>	
+	</web>
+	
+	<templates>
+		<form template="signup" type="mson">
+			user_firstname: (custom, text, SignUpFirstName, [required]);
+			user_lastname: (custom, text, SignUpLastName, [required]);
+			signup_username: (username, text, SignUpUsername, [email], hashint);
+			hint: (hint, hint, SignUpUsernameHint);
+			signup_password: (password, password, SignUpPassword, [required]);
+			signup_repeatpassword: (repeatpassword, password, SignUpRepeatPassword, [match=signup_password%ValidateViolationPasswordMatch])
+		</form>
+		<form template="signin" type="mson">
+			signin_username: (none, text, SignInUsernameText, [required%SignInEmptyUsername]);
+			signin_password: (none, password, SignInPasswordText, [required%SignInEmptyPassword])
+		</form>
+	</templates>
+	
+
+	<configuration>
+		<config rel="default" name="default-language" content="english" alt="(string) specify default language" />
+		<config rel="default" name="default-template" content="true" alt="(true/false) sets if the default template set should be used" />
+		<config rel="default" name="default-content" content="index" alt="(blank/index) select the default content" />
+		
+		<config rel="email" name="email-signup" content="true" alt="(true/false) enables an welcome e-mail after signup" />
+		
+		<config rel="http" name="http-nocache" content="true" alt="(true/false) enables http no chache" />
+		
+		<config rel="html" name="html-compress" content="true" alt="(true/false) enables html compression" />
+		<config rel="html" name="html-compress-bodyonly" content="true" alt="(true/false) for seo, only compress body" />
+		
+		<config rel="web" name="web-resources" content="lawinfo.css" alt="(list) specify personality resources" />
+		<config rel="web" name="web-doctype" content="DOCTYPE html" alt="(string) specify the doctype for the webpage" />
+		<config rel="web" name="web-favicon" content="/favicon.png" alt="(filename) filename to the favicon" />		
+
+		<config rel="mobile" name="apple-touch-icon" content="/resources/project/images/mobile/icon-apple-%s.png" />
+		
+		<config rel="user" name="user-authentification" content="both" alt="(credential/token/both) user authentification type" />
+		<config rel="user" name="user-session-lifetime" content="120" alt="(minutes) life time of the user session in minutes" />
+		<config rel="user" name="user-signup-emailverification" content="true" alt="(true/false) enables email verification" />
+		<config rel="user" name="google-use" content="true" />
+		
+	</configuration>
+	
+
+</personality>

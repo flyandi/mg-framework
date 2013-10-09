@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language type="project" language="en" name="english" version="1.0">
+	
+	<!-- Document Titles -->
+	<l id="DocumentTitleDefault" page="Default">(mg)Framework</l>
+
+	<!-- Menu -->
+	<l id="MenuLogoTitle">BabyNotify.com - Notify Family And Friends Of Your New Arrival With One Click</l>
+	<l id="MenuHomeLink">Home</l>
+	<l id="MenuHomeTitle">Homepage</l>
+	<l id="MenuNotifyListLink">My Account</l>
+	<l id="MenuNotifyListTitle">Manage your account and your notification list</l>
+	<l id="MenuBabiesLink">Babies</l>
+	<l id="MenuBabiesTitle">See all arrivals announced through BabyNotify</l>
+	<l id="MenuAboutUsLink">About Us</l>
+	<l id="MenuAboutUsTitle">Learn more about BabyNotify</l>
+	<l id="MenuHelpLink">Help</l>
+	<l id="MenuHelpTitle">Need Help? Click here to go to our help section</l>
+	<l id="MenuSignUpLink">Sign Up</l>
+	<l id="MenuSignUpTitle">Create a new account on BabyNotify</l>
+	<l id="MenuSignInLink">Login</l>
+	<l id="MenuSignInTitle">Sign in to your existing BabyNotify account</l>
+	<l id="MenuSignOutLink">Logout</l>
+	<l id="MenuSignOutTitle">Logout from BabyNotify</l>
+	
+	<!-- Footer -->
+	<l id="FooterLanguages">Languages</l>
+	<l id="FooterTCLink">Terms ##amp; Conditions</l>
+	<l id="FooterTCTitle">Terms ##amp; Conditions</l>
+	<l id="FooterPPLink">Privacy Policy</l>
+	<l id="FooterPPTitle">Privacy Policy</l>
+	<l id="FooterMobileLink">Mobile</l>
+	<l id="FooterMobileTitle">Download the BabyNotify App for your Mobile Device</l>
+	<l id="FooterProfessionalsLink">For Professionals</l>
+	<l id="FooterProfessionalsTitle">For Doctors, Hospitals and Service Providers</l>
+	
+	<!-- Footer -->
+	<l id="FooterCopyright">Copyright</l>
+	<l id="FooterCopyrightYear">2012</l>
+	<l id="FooterCopyrightLegal">All rights reserved</l>
+	
+	<!-- SignIn -->
+	<l id="SignInHeadline">Authorization Required</l>
+	<l id="SignInUsernameText">Username</l>
+	<l id="SignInPasswordText">Password</l>
+	<l id="SignInSubmitButton">Sign In</l>
+	<l id="SignInPasswordReminderText">Forgot your password?</l>
+	<l id="SignInEmptyUsername">Please enter your e-mail address.</l>
+	<l id="SignInEmptyPassword">Please enter your password.</l>
+	<l id="SignInInvalidUser">There was an error with your E-Mail/Password combination. Please try again.</l>
+	<l id="SignInUserDisabled">Your account was disabled. Please contact customer support.</l>
+	<l id="SignInInvalidPassword">%SignInInvalidUser%</l>
+	<l id="SignInInvalidToken">The authorization token has expired or is invalid.</l>	
+	
+	<!-- Interface -->
+	<l id="InterfaceTabNotifyList">My Notify List</l>
+	<l id="InterfaceTabNotification">My Notification</l>
+	<l id="InterfaceTabSettings">Settings</l>
+	<l id="InterfaceTabOverview">Overview</l>
+	<l id="InterfaceTabNotify">Send Notification</l>
+	<l id="InterfaceTabNotifyTitle">Click here to send your notification!</l>
+	
+	<l id="InterfaceDialogWaitText">Please Wait</l>
+	
+	<l id="InterfaceContactListText">contact(s) are in your Notification List</l>
+	
+	<l id="InterfaceSettingsHintFillOut">Enter the information below and complete it when your new arrival is here.</l>
+	<l id="InterfaceSettingsTitleAboutBaby">About Your Baby</l>
+	<l id="InterfaceSettingsTitleAboutBirth">Baby Details</l>
+	<l id="InterfaceSettingsTitleAboutYou">About You</l>
+	<l id="InterfaceSettingsTitleNotifications">Privacy Settings</l>
+	<l id="InterfaceSettingsTitleTools">Widget Settings</l>
+	<l id="InterfaceSettingsTitleCustomize">Your Notification</l>
+	
+	<l id="InterfaceSettingsTitlePassword">Change your Password</l>
+	<l id="InterfaceSettingsMsgPassword">Click the button to change your password.</l>
+	<l id="InterfaceSettingsButtonPassword">Change Password</l>
+	
+	<l id="InterfacePwdDialogLabel1">New Password</l>
+	<l id="InterfacePwdDialogLabel2">Repeat Password</l>
+	
+	<l id="InterfaceSettingsTitleOther">Other Options</l>
+	
+	<l id="InterfaceSettingsMsgResetList">You can reset your account if you need to. [b]Note:[/b] All data will be removed.</l>
+	<l id="InterfaceSettingsButtonResetList">Reset Account</l>
+	
+	<l id="InterfaceSettingsMsgCloseAccount">You can close your account if you don't need it anymore.</l>
+	<l id="InterfaceSettingsButtonCloseAccount">Close Account</l>
+	
+	<l id="InterfaceSettingsLabelBabyName">Baby's Name</l>
+	<l id="InterfaceSettingsLabelBabyNameGender">Baby's Gender ##amp; Name</l>
+	<l id="InterfaceSettingsLabelMomName">Mom's Name</l>
+	<l id="InterfaceSettingsLabelDadName">Dad's Name</l>
+	<l id="InterfaceSettingsLabelMom">Mom</l>
+	<l id="InterfaceSettingsLabelDad">Dad</l>
+	<l id="InterfaceSettingsLabelDueDate">Expected Due Date</l>
+	<l id="InterfaceSettingsHintDueDate">If you specify a due date we will show a small countdown widget on the top right corner.</l>
+	<l id="InterfaceSettingsLabelGender">Baby's Gender</l>
+	<l id="InterfaceSettingsLabelWeight">Weight</l>
+	<l id="InterfaceSettingsLabelLength">Length</l>
+	<l id="InterfaceSettingsLabelPicture">Baby's Picture</l>
+	<l id="InterfaceSettingsLabelBirthDate">Birth Date ##amp; Time</l>
+	<l id="InterfaceSettingsLabelBirth">Birth Date</l>
+	
+	<l id="InterfaceSettingsTabInfo">Your Info</l>
+	<l id="InterfaceSettingsTabColor">Theme ##amp; Colors</l>
+	<l id="InterfaceSettingsTabPreview">Preview</l>
+	
+	
+	<l id="InterfaceSettingsBirthDateTimeFormat" literal="true">%W, %M %e, %Y at %l:%i %p</l>
+	<l id="InterfaceSettingsBirthDateTimeFormatJS" literal="true">F, l jS, Y \\a\\t h:ia</l>
+	<l id="InterfaceSettingsBirthDateTimeFormatPHP" literal="true">F, l jS, Y \a\t h:ia</l>
+	
+	
+	<l id="InterfaceSettingsLabelBNTwitter">Publish your announcement on the BabyNotify Twitter</l>
+	<l id="InterfaceSettingsMsgBNTwitter">If checked, we will tweet the news of your new arrival on the BabyNotify Twitter account. [a href="http://twitter.com/babynotify" target="_blank"]Go to the BabyNotify Twitter[/a]</l>
+	
+	<l id="InterfaceSettingsLabelWall">Allow the public to see my Baby Profile on BabyNotify Babies</l>
+	<l id="InterfaceSettingsMsgWall">If checked, your Baby Profile will be listed on BabyNotify Babies. If you don\'t choose this option, your Baby Profile will only be privately accessible. [a href="/babies" target="_blank"]Go to the BabyNotify Babies[/a]</l>
+	<l id="InterfaceSettingsLabelWallLink" literal="true">Your Baby Profile Link: [div class="slug"]http://www.babynotify.com/%s[/div]</l>
+	
+	<l id="InterfaceNotifyListAdd">Add</l>
+	<l id="InterfaceNotifyListImport">Import</l>
+	<l id="InterfaceNotifyListShow">Show</l>
+	<l id="InterfaceNotifyListHide">Hide</l>
+	<l id="InterfaceServiceCaption">Your Notify List is connected to %s</l>
+	<l id="InterfaceServiceCaptionDisconnected">Your Notify List is not connected to %s</l>
+	<l id="InterfaceServiceLearnMoreLink">Learn More</l>
+	<l id="InterfaceServiceConnectButton">Connect to</l>
+	<l id="InterfaceServiceDisconnectButton">Disconnect from</l>
+	<l id="InterfaceServiceConnectAnother">Connect another account</l>
+	<l id="InterfaceServiceMultipleMsgTitle">Please Confirm</l>
+	
+	<l id="InterfaceRegistryModifyError">This contact could not be added. Please try again later.</l>
+	<l id="InterfaceRegistryDialogPhoneHint">This contact will be notified via a text message if a valid phone number is provided.</l>
+	<l id="InterfaceRegistryDialogDeleteTitle">Remove Contact</l>
+	<l id="InterfaceRegistryDialogDeleteMessage">Do you want to remove the selected contact?</l>
+	<l id="InterfaceRegistryDialogErrorTitle">Incomplete details</l>
+	<l id="InterfaceRegistryDialogErrorMessage">Please enter a name and an e-mail or phone number for this contact</l>
+	<l id="InterfaceRegistryDialogTitleAdd">Add Contact</l>
+	<l id="InterfaceRegistryDialogTitleEdit">Edit Contact</l>
+	<l id="InterfaceRegistryDialogLabelName">Name</l>
+	<l id="InterfaceRegistryDialogLabelEMail">E-Mail</l>
+	<l id="InterfaceRegistryDialogLabelPhone">Phone</l>
+	
+	<l id="InterfaceNotificationHeader">Ready to send out your notification?</l>
+	<l id="InterfaceNotificationText">Make sure you have finalized your notification. You cannot make any changes to your notification once you have submitted it.[br/][br/]If you are not ready, click the [strong]Cancel[/strong] button to exit this dialog.</l>
+	<l id="InterfaceNotificationDisclaimer">By clicking the button [b]Send Notification[/b], BabyNotify will send your notification to your Notification List and update your connected social services. You will not be able to send this notification again. By confirming this box you agree to our [a href="/terms" target="_blank"]Terms and Conditions[/a].</l>
+	<l id="InterfaceNotificationDisclaimerCaptcha" literal="true">%s + %s = </l>
+	<l id="InterfaceNotificationDisclaimerCaptchaTitle">[strong]Please confirm the equation below:[/strong]</l>
+	<l id="InterfaceNotificationDisclaimerCaptchaError">Please enter the correct result of the equation. Shouldn\'t be that difficult.</l>
+	<l id="InterfaceNotificationNotSpecified">Not specified</l>
+	<l id="InterfaceNotificationDialogErrorTitle">There is a problem!</l>
+	<l id="InterfaceNotificationDialogErrorMessage">To send your notification please select the baby's gender and enter the parent(s) name.</l>
+	<l id="InterfaceNotificationSubmitErrorTitle">Something went wrong...</l>
+	<l id="InterfaceNotificationSubmitErrorMessage">The most common reason is that your notification is already scheduled or sent but our records are not updated yet. We are notified of this problem and are looking into it.</l>
+	<l id="InterfaceNotificationSubmitSuccessTitle">Congratulations!</l>
+	<l id="InterfaceNotificationSubmitSuccessMessage">Your Notification was successfully scheduled. It can take up to 30 minutes until your notification is processed. You will receive an e-mail confirmation that your notification has been sent.</l>
+	<l id="InterfaceNotificationPendingDialogTitle">Your Notification!</l>
+	<l id="InterfaceNotificationPendingDialogMessage">Your Notification is scheduled and will be processed shortly.</l>
+	<l id="InterfaceNotificationPendingTitle">Congratulations!</l>
+	<l id="InterfaceNotificationPendingMessage">Click the button below to check the status of your notification.</l>	
+	<l id="InterfaceNotificationPendingButton">Check Status</l>
+	<l id="InterfaceNotificationSubmittedDialogTitle">Your Notification was sent!</l>
+	<l id="InterfaceNotificationSubmittedDialogMessage">Congratulations. Your Notification was successfully sent to your contact list and connected services.</l>	
+	
+	<l id="InterfaceWidgetPasswordDialogTitle">Change Password</l>
+	<l id="InterfaceWidgetPasswordDialogMessage">Please enter your new password and confirm it.</l>
+	<l id="InterfaceWidgetPasswordDialogHint">Your password must have at least 4 characters.</l>
+	
+	<l id="InterfaceImportDialogTitle">Import Contacts</l>
+	<l id="InterfaceImportDialogMessage">You can import contacts from different services. Click one of the services below to get started.</l>
+	<l id="InterfaceImportDialogButtonItem" literal="true">Import from %s</l>
+	
+	<l id="InterfaceContactsDialogTitle">Available Contacts to Import</l>
+	<l id="InterfaceContactsDialogMessage">Select the contacts below you want to import to your registry and click the button [b]Import[/b] when ready.</l>
+	<l id="InterfaceContactsSelectAll">Select All</l>
+	<l id="InterfaceContactsUnselectAll">Unselect All</l>
+	<l id="InterfaceContactsInvertSelect">Invert Selection</l>
+	<l id="InterfaceContactsErrorTitle">Import Contacts Error</l>
+	<l id="InterfaceContactsErrorMessageNoSelected">No contacts were selected.</l>
+	<l id="InterfaceContactsErrorMessageFailed">The selected contacts could not be imported.</l>
+	<l id="InterfaceContactsCount" literal="true">Displaying %s contacts</l>
+	
+	<l id="InterfaceCustomizeEMail">E-Mail and Profile Notification</l>
+	<l id="InterfaceCustomizeSMS">SMS Notification</l>
+	<l id="InterfaceCustomizeWall">Babies Profile</l>
+	
+	<l id="InterfaceSettingsClearDialogTitle">Reset Account</l>
+	<l id="InterfaceSettingsClearDialogMessage">Do you really want to reset your account?[br/][br/][strong]Note:[/strong] Your data will be permanently erased.</l>
+	
+	<l id="InterfacePreviewSMSDialogTitle">Preview of your SMS/Text Message</l>
+	
+	<l id="InterfaceButtonCustomizeAndPreview">Customize Notification</l>
+	
+	<l id="InterfaceOverviewTitle">Congratulations!</l>
+	<l id="InterfaceOverviewMessage">Your notification was successfully sent and your Baby Profile is now active.</l>
+	<l id="InterfaceOverviewSlugTitle">Your Baby Profile</l>
+	<l id="InterfaceOverviewSlugMessage">Copy and paste the link below and share it with anyone.</l>
+	<l id="InterfaceOverviewSlugLink">Visit your Baby Profile</l>
+	<l id="InterfaceOverviewStatsTitle">Statistics</l>
+	<l id="InterfaceOverviewStatsVisits">Visit(s) to your Baby Profile</l>
+	<l id="InterfaceOverviewStatsComments">Comment(s)</l>
+	<l id="InterfaceOverviewStatsCommentsLink">Manage Comments</l>
+	<l id="InterfaceOverviewVisbilityTitle">Visibility</l>
+	<l id="InterfaceOverviewVisibilityUnlockTitle">Your Baby Profile is currently publicly accessible</l>
+	<l id="InterfaceOverviewVisibilityUnlockMsg">Your Baby Profile is publicly listed in [a href="/babies" target="_blank"]BabyNotify Babies[/a]</l>
+	<l id="InterfaceOverviewVisibilityUnlockButton">Turn Private</l>
+	<l id="InterfaceOverviewVisibilityLockTitle">Your Baby Profile is currently only privately accessible</l>
+	<l id="InterfaceOverviewVisibilityLockMsg">Anyone with the link above can access your Baby Profile. Your profile is not publicly listed.</l>	
+	<l id="InterfaceOverviewVisibilityLockButton">Turn Public</l>
+	
+	<l id="InterfaceWelcomePage0Title">Congratulations!</l>
+	<l id="InterfaceWelcomePage0SubTitle">The Wizard is now complete</l>
+	<l id="InterfaceWelcomePage0Header">Four Easy Steps to get started!</l>
+	<l id="InterfaceWelcomePage0Text0">1. Import your contacts and connect your social services.</l>
+	<l id="InterfaceWelcomePage0Text1">2. Enter baby details.</l>
+	<l id="InterfaceWelcomePage0Text2">3. Customize your announcement with themes and colors.</l>
+	<l id="InterfaceWelcomePage0Text3">4. On delivery day, take or upload a photo, add birth details and send your notification. Download the BabyNotify Mobile App for added convenience.</l>
+	<l id="InterfaceWelcomePage0Continue">Click "Finish" to close this window.</l>
+	
+	<l id="InterfaceWelcomePage1Title">What is your due date?</l>
+	<l id="InterfaceWelcomePage1SubTitle">Enter or calculate it and click [b]Next[/b] to continue</l>
+	
+	<l id="InterfaceWelcomePage2Title">Do you know the gender of your new arrival already?</l>
+	<l id="InterfaceWelcomePage2SubTitle">Select from the options below and click [b]Next[/b] to continue</l>
+	
+	<l id="InterfaceWelcomePage3Title">Who are the parent(s)?</l>
+	<l id="InterfaceWelcomePage3SubTitle">Enter the details below and click [b]Next[/b] to continue</l>
+	
+	<l id="InterfaceWelcomePage4Title">Welcome to BabyNotify!</l>
+	<l id="InterfaceWelcomePage4SubTitle">Congratulations your account is now active</l>
+	<l id="InterfaceWelcomePage4Text">This wizard will guide you through some basic settings for BabyNotify. Click [b]Next[/b] to continue.</l>
+		
+	
+	<!-- Error Messages -->
+	<l id="PictureUploadErrorTitle">Picture not accepted</l>
+	<l id="PictureUploadErrorMime" literal="true">The selected file is not an image (%s). Please make sure that your picture is either in JPEG or PNG format.</l>
+	<l id="PictureUploadErrorMimeHint">Use an [a href="http://www.online-utility.org/image_converter.jsp" target="_blank"]online converter[/a] to reformat your image.</l>
+	<l id="PictureUploadErrorSize" literal="true">The selected file is exceeding the upload limit of %s (Uploaded Size: %s).</l>
+	
+	<!-- Buttons -->
+	<l id="ButtonSendNotification">Send Notification</l>
+	
+	<!-- Widget: Due Date Calculator -->
+	<l id="WidgetDueDateTitle">Due Date Calculator</l>
+	<l id="WidgetDueDateButtonUse">Use Due Date</l>
+	<l id="WidgetDueDateQuestion">How do you want to calculate your due date?</l>
+	<l id="WidgetDueDateEDD">Based on first day of the last menstrual period:</l>
+	<l id="WidgetDueDateEDC">Based on conception date:</l>
+	<l id="WidgetDueDateResultTitle">Based on your entered date your approximatly due date is:</l>
+	<l id="WidgetDueDateCalculatorDateFormat" literal="true">%W,%e %M %Y</l>
+	
+	<!-- Service Messages -->
+	<l id="ServiceErrorNotExistsCaption">The requested service does not exists!</l>
+	<l id="ServiceErrorNotExistsMessage">The requested service [b]%s[/b] could not be located.</l>
+	
+	<!-- Gender Related Words -->
+	<l id="GenderSurprise">Surprise</l>
+	<l id="GenderOur">our</l>
+	<l id="GenderOurUC">Our</l>
+	<l id="GenderNone">Baby</l>
+	<l id="GenderGirl">Girl</l>
+	<l id="GenderGirls">Girls</l>
+	<l id="GenderBoy">Boy</l>
+	<l id="GenderBoys">Boys</l>
+	<l id="GenderTwins">Twins</l>
+	<l id="GenderTwin">Twin</l>
+	<l id="GenderTriplets">Triplets</l>
+	<l id="GenderTriplet">Triplet</l>
+	
+	<l id="GenderNoneTitle">Welcome %GenderNone%</l>
+	<l id="GenderComboNone">I don't know yet</l>
+	<l id="GenderComboSurprise">It's a %GenderSurprise%</l>
+	<l id="GenderComboBoy">It's a %GenderBoy%</l>
+	<l id="GenderComboGirl">It's a %GenderGirl%</l>
+	<l id="GenderComboTwins">%GenderTwins%</l>
+	<l id="GenderComboTwinBoys">%GenderTwin% %GenderBoys%</l>
+	<l id="GenderComboTwinGirls">%GenderTwin% %GenderGirls%</l>
+	<l id="GenderComboTriplets">%GenderTriplets%</l>
+	<l id="GenderComboTripletBoys">%GenderTriplet% %GenderBoys%</l>
+	<l id="GenderComboTripletGirls">%GenderTriplet% %GenderGirls%</l>
+	<l id="GenderBaby">Baby</l>
+	
+	<!-- Default Theme Related -->
+	<l id="ThemeLegalText">You received this message because you were on a baby notification list at [a href="http://www.babynotify.com" target="_blank"]BabyNotify.com[/a]. We will never use your e-mail address other than for this notification.</l>
+	
+	<!-- Theme Words -->
+	<l id="ThemeDate">Date</l>
+	<l id="ThemeTime">Time</l>
+	<l id="ThemeWeight">Weight</l>
+	<l id="ThemeLength">Length</l>
+	<l id="ThemeDefaultMommy">Mommy</l>
+	<l id="ThemeDefaultDaddy">Daddy</l>
+	
+	<!-- Customize -->
+	<l id="CustomizeLabelTheme">Theme</l>
+	<l id="CustomizeLabelColor">Color</l>
+	<l id="CustomizeLabelBackground">Background</l>
+	<l id="CustomizeLabelTextColor">Text Color</l>
+	<l id="CustomizeLabelReset">Automatic Colors</l>
+	
+	
+	<!-- Messaging -->
+	<l id="MessagingSubject" literal="true">BabyNotify on behalf of %s</l>
+	<l id="MessagingSMS" literal="true">%s announcing the arrival of %s born on %s</l>
+	
+	<!-- Email -->
+	<l id="EMailLegal">This message was sent to [strong]{toemailaddress}[/strong]. Please do not reply to this message; it was sent from an unmonitored email address. This message is a service email related to your use of [a href="http://www.babynotify.com" target="_blank"]BabyNotify[/a].</l>
+	<l id="EMailSubjectSignUp">Confirm your BabyNotify account, {firstname}!</l>
+	<l id="EMailSubjectNewComment">A new comment was posted, {firstname}!</l>
+	<l id="EMailSubjectComplete">Congratulations on your new arrival, {firstname}!</l>
+	
+	<!-- Mobile -->
+	<l id="MobileDownloadTitle">Get the BabyNotify Mobile App!</l>
+	<l id="MobileDownloadTitleShort">Get the App!</l>
+	<l id="MobileDownloadMessage">Download the BabyNotify Mobile App for your phone or tablet.</l>
+	<l id="MobileMore">More Options</l>
+	<l id="MobileDeviceAppleText">BabyNotify for iPhone/iPad</l>
+	<l id="MobileDeviceAppleTextShort">iPhone/iPad</l>
+	<l id="MobileDeviceAndroidText">BabyNotify for Android</l>
+	<l id="MobileDeviceAndroidTextShort">Android</l>
+	<l id="MobileDeviceAndroid">https://market.android.com/details?id=com.lusumdy.babynotify</l>
+	<l id="MobileDeviceChromeText">BabyNotify for Chrome</l>
+	<l id="MobileDeviceChromeTextShort">Chrome</l>
+	<l id="MobileDeviceChrome">https://chrome.google.com/webstore/detail/jonapdfeeghchpgcgiehkadkicbadfoe</l>
+	
+	<!-- Babies -->
+	<l id="BabiesTitle">BabyNotify Babies</l>
+	<l id="BabiesMessage">Meet the babies that have been announced through BabyNotify[span]*[/span]</l>
+	<l id="BabiesDisclaimer">*Parents can choose if they want their arrival publicly displayed on BabyNotify Baby.</l>
+	<l id="BabiesBankLink">Back to overview</l>
+	<l id="BabiesPreview">This is a preview of your Baby Profile.</l>
+	<l id="BabiesPreviewSubmitted">This is your Baby Profile</l>
+	<l id="BabiesPreviewSubmittedAdmin">You can delete a comment by clicking [strong]Remove[/strong].</l>
+	<l id="BabiesPreviewSubmittedButton">Back to Account</l>
+	
+	<!-- Share -->
+	<l id="ShareThisTitle">Share it on</l>
+	
+	<!-- Comment -->
+	<l id="CommentThisTitle">Leave a comment</l>
+	<l id="CommentsTitle">Comments</l>
+	<l id="CommentsNone">No comments available yet.</l>
+	<l id="CommentFormMessage">Your Message</l>
+	<l id="CommentFormName">Your Name</l>
+	<l id="CommentFormEMail">Your E-Mail</l>
+	<l id="CommentPostDialogTitle">Wait a minute...</l>
+	<l id="CommentPostDialogMessage">You need to fill out all fields and provide a valid e-mail address.[br/][br/]Don't worry, we will never use your e-mail address for spam or sell it.</l>
+	<l id="CommentPostDialogMessageS">Hmm... Seems like you have an auto-filler plugin activated in your browser or you are an Spammer. Either way, we can not accept your comment at this time.</l>
+	<l id="CommentDeleteDialogTitle">Delete Comment</l>
+	<l id="CommentDeleteDialogMessage">Do you really want to remove this comment?</l>	
+	<l id="CommentFormPosted">Your comment was posted!</l>
+	<l id="CommentPostButton">Post Comment</l>
+	
+	<!-- Page Snippets -->
+	<l id="PSSocialVisitUs">Visit us on</l>
+	<l id="PSCSTitle">How to contact us!</l>
+	<l id="PSCSMessage">Just send an e-mail to [a href="mailto:support@babynotify.com"]support@babynotify.com[/a] with your request.</l>
+	
+</language>

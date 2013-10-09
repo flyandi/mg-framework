@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language type="system" language="en" name="English" version="1.0">
+
+	<!-- (system) Text //-->
+	<l id="SystemTextDisabled">Disabled</l>
+	<l id="SystemTextEnabled">Enabled</l>
+	
+	<!-- (system) Browser Support //-->
+	<l id="BrowserNotSupportedTitle">Your Browser is not supported!</l>
+	<l id="BrowserNotSupportedText">Your browser is not meeting the minimum to run this web application. Please upgrade your browser to the latest version or use a copy of the current FireFox, Safari, Google Chrome or Internet Explorer.</l>
+	
+	<!-- (system) Maintenance //-->
+	<l id="MaintenanceTitle">Under Maintenance</l>
+	<l id="MaintenanceText">This website is currently under maintenance. We applogize for any inconvience.</l>
+	
+	<!-- (system) Buttons //-->
+	<l id="ButtonAdd">Add</l>
+	<l id="ButtonSave">Save</l>
+	<l id="ButtonSaveClose">Save ##amp; Close</l>
+	<l id="ButtonCancel">Cancel</l>
+	<l id="ButtonDelete">Delete</l>
+	<l id="ButtonOk">Ok</l>
+	<l id="ButtonYes">Yes</l>
+	<l id="ButtonNo">No</l>
+	<l id="ButtonBack">Back</l>
+	<l id="ButtonImport">Import</l>
+	<l id="ButtonChange">Change</l>
+	<l id="ButtonApply">Apply</l>
+	<l id="ButtonApplyClose">Apply ##amp; Close</l>
+	<l id="ButtonUseClose">Use ##amp; Close</l>
+	<l id="ButtonClose">Close</l>
+	<l id="ButtonClear">Clear</l>
+	<l id="ButtonCalculate">Calculate</l>
+	<l id="ButtonCustomize">Customize</l>
+	<l id="ButtonContinue">Continue</l>
+	<l id="ButtonBrowse">Browse</l>
+	<l id="ButtonPreview">Preview</l>
+	<l id="ButtonShare">Share</l>
+	<l id="ButtonRemove">Remove</l>
+	<l id="ButtonPrevious">Back</l>
+	<l id="ButtonNext">Next</l>
+	<l id="ButtonFinish">Finish</l>
+	<l id="ButtonUploadPicture">Upload Picture</l>
+	<l id="ButtonClearPicture">Clear Picture</l>
+	<l id="ButtonUpload">Upload</l>
+	<l id="ButtonUse">Use</l>
+	<l id="ButtonSelect">Select</l>
+	<l id="ButtonExchange">Exchange</l>
+	
+	<l id="ComboSelectMessage">Please choose</l>
+	
+	
+	<!-- (system) Dialogs //-->
+	<l id="DialogPageActions">Actions</l>
+	<l id="DialogPageTabs">Tabs</l>
+	<l id="DialogDeleteTitle">Do you really want to delete the following items?</l>
+	
+	<!-- (asset) -->
+	<l id="AssetLabelAll">All</l>
+	<l id="AssetLabelImages">Images</l>
+	<l id="AssetLabelArchives">Archives</l>
+	<l id="AssetLabelMusic">Music</l>
+	<l id="AssetLabelVideos">Videos</l>
+	<l id="AssetLabelDocuments">Documents</l>	
+	<l id="AssetLabelMedia">Media</l>
+	<l id="AssetLabelOther">Other</l>
+	
+	<l id="ASGColumnFilename">Name</l>
+	<l id="ASGColumnTypeName">Type</l>
+	<l id="ASGColumnSize">Size</l>
+	
+	<l id="HistoryColumnDate">Date</l>
+	<l id="HistoryColumnTime">Time</l>
+	<l id="HistoryColumnName">Name</l>
+	<l id="HistoryColumnDescription">Description</l>
+	<l id="HistoryColumnType">Type</l>
+	
+	
+		
+	<!-- (system) UploadFile Identifiers [do not change] //-->
+	<l id="FileNoSelected">No file</l>
+	<l id="FileUploadError">There was an error while uploading your file.</l>
+	<l id="FileUploadErrorTitle">Upload failed!</l>
+	<l id="FileUploadErrorMime" literal="true">The selected file is not acceptable (%s). Please makes sure that the selected file meets the upload requirements.</l>
+	<l id="FileUploadErrorSize" literal="true">The selected file is exceeding the upload limit of %s (Uploaded Size: %s).</l>	
+	<l id="FileUploadError:200">The type of the uploaded file was not accepted.</l>
+	<l id="FileUploadError:201">The file size exceeded the upload limit.</l>
+	<l id="FileUploadError:202">A general error occured. Please try again later.</l>
+	<l id="FileUploadError:203">System Error 203. Please try again later.</l>
+	<l id="FileUploadError:204">Your session is expired. Please login and try again.</l>
+	<l id="FileUploadError:205">System Error 205. Please try again later.</l>
+	<l id="FileUploadError:206">System Error 206. Please try again later.</l>
+	
+	<!-- (system) Validation Errors //-->
+	<l id="ValidateViolationRequired">Please enter your [b]%s[/b].</l>
+	<l id="ValidateViolationNumeric">Please enter a numeric value for [b]%s[/b].</l>
+	<l id="ValidateViolationEmail">Please enter a valid E-Mail address.</l>
+	<l id="ValidateViolationMatch">The entered values for [b]%s[/b] and [b]%s[/b] do not match.</l>
+	<l id="ValidateViolationPasswordMatch">Your passwords don't match.</l>
+	
+	<!-- (system) Module Errors //-->
+	<l id="ModuleErrorNotExistsCaption">The requested module does not exists!</l>
+	<l id="ModuleErrorNotExistsMessage">The requested module [b]%s[/b] could not be located.</l>
+	
+	<!-- (javascript) datetimer picker localization //-->
+	<l id="DTTitleDate" literal="true">Select Date</l>
+	<l id="DTFormatDate" literal="true">%Y-%c-%d</l>
+	<l id="DTFormatDateName" literal="true">%W, %M %e, %Y</l>
+	<l id="DTTitleDateTime" literal="true">Select Date and Time</l>
+	<l id="DTFormatDateTime" literal="true">%c-%d-%Y %l:%i %p</l>
+	<l id="DTFormatDateTimeName" literal="true">%W, %M %e, %Y %l:%i %p</l>
+	<l id="DTTitleTime" literal="true">Select Time</l>
+	<l id="DTFormatTime" literal="true">%l:%i %p</l>
+	
+	
+	<l id="DTLabelDayOfMonth" literal="true">Day of Month</l>
+	<l id="DTLabelHour" literal="true">Hour</l>
+	<l id="DTLabelMinute" literal="true">Minute</l>
+	<l id="DTLabelSecond" literal="true">Second</l>
+	<l id="DTLabelMonth" literal="true">Month</l>
+	<l id="DTLabelYear" literal="true">Year</l>
+	
+	<!-- localizations -->
+	<l id="LocalizedDayAbbreviations" literal="true">'Mon','Tue','Wed','Thu','Fri','Sat','Sun'</l>
+	<l id="LocalizedDayNames" literal="true">'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'</l>
+	<l id="LocalizedFirstDayOfWeek" literal="true">0</l>
+	<l id="LocalizedMonthAbbreviations" literal="true">'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'</l>
+	<l id="LocalizedMonthNames" literal="true">'January','February','March','April','May','June','July','August','September','October','November','December'</l>
+	<l id="LocalizedLongDateFormat" literal="true">F jS, Y</l>
+	<l id="LocalizedTimeFormat" literal="true">h:i a</l>
+	
+</language>

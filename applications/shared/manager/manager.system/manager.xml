@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="manager.system" name="System" version="1.0" disabled="false">
+	<requirerole requires="administrator" />
+	<views>
+		<view name="system" label="ManagerModuleHeader" configurable="true" configuretext="Configure" />
+	</views>
+	<actions>
+		<action label="ManagerModuleRegistry" icon="cog" action="registry" targetview="system" />
+	</actions>
+	<grids>
+		<grid name="registry">
+			<column name="ColumnName" field="name" width="200" />
+			<column name="ColumnType" field="idtype" format="true" width="80">
+				<format value="0" label="Boolean" />
+				<format value="1" label="Integer" />
+				<format value="2" label="String" />
+				<format value="3" label="Date" />
+				<format value="4" label="Collection" />
+			</column>			
+			<column name="ColumnMode" field="mode" format="true" width="80">
+				<format value="0" label="Custom" />
+				<format value="1" label="System" />
+			</column>
+			<column name="ColumnValue" field="value" width="auto" />
+		</grid>
+	</grids>
+	<languages>
+		<language type="default" language="english" name="English">
+			<l id="ManagerModuleHeader">System Management</l>
+			<l id="ManagerModuleHeaderRegistry">Registry</l>
+			<l id="ManagerModuleRegistry">Registry</l>
+			<l id="ColumnName">Name</l>
+			<l id="ColumnType">Type</l>
+			<l id="ColumnMode">Mode</l>
+			<l id="ColumnValue">Value</l>
+		</language>
+	</languages>	
+</module>

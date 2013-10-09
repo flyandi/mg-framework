@@ -1,0 +1,45 @@
+.mgDateTimePicker-pkr * {border:0;font: inherit;font-size: x-small;font-style:normal;font-weight:normal;list-style-type:none;margin:0;padding:0;white-space: nowrap}
+div.mgDateTimePicker-win {z-index:6000;background-color:#F3F3F3;border:1px solid #d7d7d7;font:normal normal normal xx-small/normal sans-serif;padding-bottom:0.2em;-moz-border-radius:6px;-webkit-border-radius:6px}
+.mgDateTimePicker-pkr .mgDateTimePicker-cloak {background-color:#D7D7D7;opacity:0.7;filter:alpha(opacity=70)}
+.mgDateTimePicker-pkr .mgDateTimePicker-hdr {position:relative;background-color:#d7d7d7;color:#606062;font:bold 12px Tahoma,Arial,Helvetica,sans-serif;height:20px;margin:0;text-align:center;line-height:17px;}
+.mgDateTimePicker-pkr .mgDateTimePicker-x-btn {background-color:#fff;border:1px solid #d7d7d7;color:#333;cursor:pointer;position:absolute;right:1px;top:0px;text-align:center;padding:0 5px;-moz-border-radius:0.4em;-webkit-border-radius:0.4em}
+.mgDateTimePicker-pkr .mgDateTimePicker-x-btn:hover {background-color:#3889E4;color:#fff;}
+.mgDateTimePicker-pkr .mgDateTimePicker-btn {background-color:#fff;border:1px solid #d7d7d7;color:#606062;cursor:pointer;float:left;font-family:Arial,Helvetica,sans-serif;height:1.5em;margin-bottom:1px;margin-right:1px;padding-top:0.1em;-moz-border-radius:0.4em;-webkit-border-radius:0.4em}
+.mgDateTimePicker-pkr .mgDateTimePicker-body {padding:0.5em}
+.mgDateTimePicker-pkr .mgDateTimePicker-date {float:left;padding:0 0.5em}
+.mgDateTimePicker-pkr .mgDateTimePicker-lbl {clear:left;color:#606063;font-family:Arial,Helvetica,sans-serif;font-size:100%;font-weight:normal;font-style:normal;height:1.3em;margin:0;padding:0;text-align:center}
+.mgDateTimePicker-pkr .mgDateTimePicker-yrs {height:2.6em;text-align:center;:18.6em}
+.mgDateTimePicker-pkr .mgDateTimePicker-yrs-past-btn {width:2.7em}
+.mgDateTimePicker-pkr .mgDateTimePicker-yr-prior-btn, .mgDateTimePicker-pkr .mgDateTimePicker-yr-cur-btn, .mgDateTimePicker-pkr .mgDateTimePicker-yr-next-btn {width:3.75em}
+.mgDateTimePicker-pkr .mgDateTimePicker-yrs-ahead-btn {width:2.7em}
+.mgDateTimePicker-pkr .mgDateTimePicker-mons {height:4.8em;text-align:center;width:18.8em}
+.mgDateTimePicker-pkr .mgDateTimePicker-mon-btn {width:2.75em}
+.mgDateTimePicker-pkr .mgDateTimePicker-mon7-btn {clear:left}
+.mgDateTimePicker-pkr .mgDateTimePicker-dom-table {background-color:#F0F0F1;border:1px solid #E3E3E4;border-spacing:1px;width:18.6em}
+.mgDateTimePicker-pkr th.mgDateTimePicker-dow {background-color:#C0C0C1;color:white;font-family:Arial,Helvetica,sans-serif;font-size:95%;font-weight:normal;font-style:normal}
+.mgDateTimePicker-pkr .mgDateTimePicker-dom-btn {float:none;height:1.7em;text-align:right;padding:0 0.5em 0 0}
+.mgDateTimePicker-pkr .mgDateTimePicker-dom-btn-empty {background-color:#F3F3F4;border:1px solid #C0C0c1}
+.mgDateTimePicker-pkr .mgDateTimePicker-time {float:left;padding:0 0 0 1em;text-align:center}
+.mgDateTimePicker-pkr .mgDateTimePicker-hrs {float:left;padding-left:0.5em;padding-right:0.5em;text-align:center;width:7.2em}
+.mgDateTimePicker-pkr .mgDateTimePicker-hrs-am, .mgDateTimePicker-pkr .mgDateTimePicker-hrs-pm {float:left;width:3.6em}
+.mgDateTimePicker-pkr .mgDateTimePicker-hr-btn {text-align:right;padding-right:0.25em;width:3em; }
+.mgDateTimePicker-pkr .mgDateTimePicker-mins {float:left;padding-left:0.5em;padding-right:0.5em;text-align:center;width:4.7em}
+.mgDateTimePicker-pkr .mgDateTimePicker-mins-tens, .mgDateTimePicker-pkr .mgDateTimePicker-mins-ones {float:left;width:2.3em}
+.mgDateTimePicker-pkr .mgDateTimePicker-min-ten-btn, .mgDateTimePicker-pkr .mgDateTimePicker-min-one-btn {float:left;text-align:center;width:2em}
+.mgDateTimePicker-pkr .mgDateTimePicker-min-ten-btn-empty, .mgDateTimePicker-pkr .mgDateTimePicker-min-one-btn-empty {background-color:#F3F3F4;border:1px solid #C0C0c1}
+.mgDateTimePicker-pkr .mgDateTimePicker-secs {float:left;padding-left:0.5em;padding-right:0.5em;text-align:center;width:4.7em}
+.mgDateTimePicker-pkr .mgDateTimePicker-secs-tens, .mgDateTimePicker-pkr .mgDateTimePicker-secs-ones {float:left;width:2.3em}
+.mgDateTimePicker-pkr .mgDateTimePicker-sec-ten-btn, .mgDateTimePicker-pkr .mgDateTimePicker-sec-one-btn {float:left;text-align:center;width:2em}
+.mgDateTimePicker-pkr .mgDateTimePicker-sec-ten-btn-empty, .mgDateTimePicker-pkr .mgDateTimePicker-sec-one-btn-empty {background-color:#F3F3F4;border:1px solid #C0C0c1} 
+.mgDateTimePicker-pkr .mgDateTimePicker-offs {clear:left;float:left;padding-left:0.5em;padding-top:0.5em;text-align:center}
+.mgDateTimePicker-pkr .mgDateTimePicker-off-select-btn {width:1.5em}
+.mgDateTimePicker-pkr .mgDateTimePicker-body-yr-selector {padding:1em;    }
+.mgDateTimePicker-pkr .mgDateTimePicker-yr-mil, .mgDateTimePicker-pkr .mgDateTimePicker-yr-cent, .mgDateTimePicker-pkr .mgDateTimePicker-yr-dec, .mgDateTimePicker-pkr .mgDateTimePicker-yr-yr {float:left;width:2.5em}
+.mgDateTimePicker-pkr .mgDateTimePicker-mil-btn, .mgDateTimePicker-pkr .mgDateTimePicker-cent-btn, .mgDateTimePicker-pkr .mgDateTimePicker-dec-btn, .mgDateTimePicker-pkr .mgDateTimePicker-yr-btn {float:left;text-align:center;width:2em}
+.mgDateTimePicker-pkr .mgDateTimePicker-yr-era {float:left;padding-left:1em;width:4.1em}
+.mgDateTimePicker-pkr .mgDateTimePicker-era-btn {text-align:center;width:3em}
+.mgDateTimePicker-pkr .mgDateTimePicker-body-off-selector {margin:0.5em; }
+.mgDateTimePicker-pkr .mgDateTimePicker-off-off-btn {clear:left;padding-left:1em;padding-right:1em;text-align:left}
+.mgDateTimePicker-pkr .mgDateTimePicker-cur-btn {border:1px solid #3889E4;background-color:#3889E4;color:#fff;font-weight:bold}
+.mgDateTimePicker-pkr .mgDateTimePicker-out-btn {background-color:#fff;border:1px solid #C0C0c1} 
+.mgDateTimePicker-pkr .mgDateTimePicker-focus-btn {}

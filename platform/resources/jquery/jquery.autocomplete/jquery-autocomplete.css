@@ -1,0 +1,34 @@
+ul.autocomplete {
+  display:block;
+  margin: 0;
+  background-color:#fff;
+  border: 1px solid #DDDDDD;
+  max-height: 200px;
+  overflow-y: scroll;
+  text-align:left;
+  z-index:9999;
+  box-shadow:#aaa 1px 1px 2px;
+}
+ul.autocomplete li{
+  padding: 0px;
+  cursor:default;
+  list-style: none outside none;
+  border-top:1px solid #ddd;
+  font-size:14px;
+  line-height:25px;
+}
+ul.autocomplete li:first-child {border-top:0}
+ul.autocomplete li.hover{
+  background-color:#3889E4;
+  color:#fff!important;
+}
+ul.autocomplete li a{
+  display:block;
+  cursor:pointer;
+  width:100%;
+  text-decoration: none;
+  color:#000;
+}
+ul.autocomplete li a:hover {
+	color:#fff!important;
+}

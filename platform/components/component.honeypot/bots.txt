@@ -1,0 +1,3 @@
+(googlebot)=\.googlebot\.com$
+(Yahoo! Slurp)=crawl\.yahoo\.net$/
+(msnbot|Bingbot|BingPreview)=search\.msn\.com$

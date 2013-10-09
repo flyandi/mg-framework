@@ -1,0 +1,19 @@
+<p>
+	<big><strong>A new comment was posted, {firstname}!</strong></big>
+	<br/><br/>
+	We wanted to let you know that <strong>{author}</strong> just commented on your Baby Profile:
+	<br/><br/>
+	<div bgcolor="#EAF5FE" style="background:#EAF5FE;padding:20px;">
+		<big><i>{message}</i></big>
+	</div>
+	<br/><br/>
+	Visit your Baby Profile by clicking on the link below:
+	<br/><br/>
+	<a href="http://www.babynotify.com/{slug}">http://www.babynotify.com/{slug}</a>
+	<br/><br/>
+	You can delete unwanted comments once you sign-in to your account. Just click the button <strong>Remove</strong> on the comment you want to delete.
+	<br/><br/>
+	You can disable these messages under your account settings.
+	<br/><br/><br/>
+	<i>BabyNotify Team!</i>
+</p>
