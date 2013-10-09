@@ -5,6 +5,6 @@ platform/cron.lock
 applications/*
 !applications/shared/
 !applications/framework/
-tools/*
+tools/
 !tools/composer/
 !tools/shared/
