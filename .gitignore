@@ -1,5 +1,5 @@
 # (mg)framework ignore 
-tools/*
+tools/
 !tools/composer/
 !tools/shared/
 
