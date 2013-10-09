@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module id="manager.affiliates" name="Affiliates" version="1.0" disabled="false">
+<module id="manager.{managerid}" name="{managerclass}" version="1.0" disabled="false">
 	<requirerole requires="+manager" />
-
 	<settings styles="true" />
 
 	<actions>
-		<action id="affiliates" label="ManagerAffiliates" icon="data" action="default" targetview="data" />
+		<action id="{managerid}" label="Manager{managerclass}" icon="data" action="default" targetview="default" />
 	</actions>
-	
-	<grids>
-		<grid name="default">
-			<column name="ColumnName" field="name" sortable="true" />
-			<column name="ColumnType" field="idtype" format="option" option="lawsmart.affiliatetypes" />
-			<column name="ColumnEnabled" field="active" width="50" format="true">
-				<format value="0" label="No" />
-				<format value="1" label="Yes" />
-			</column>
-		</grid>
-	</grids>
 	
 	<languages>
 		<language type="default" language="english" name="English">
-			<l id="ManagerAffiliates">Affiliates</l>
-			<l id="ColumnName">Affiliate Name</l>
-			<l id="ColumnType">Affiliate Type</l>
-			<l id="ColumnEnabled">Active</l>
+			<l id="Manager{managerclass}">{managerclass}</l>
 		</language>
 	</languages>	
-	
 </module>

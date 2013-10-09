@@ -1,16 +1,20 @@
-<?php
-	/* 
-		Application  	Affiliates
-		Author			Andreas Schwarz
-		Version		 	1.0
-	*/
+<?php    
+	/**
+	 * {managerclass}
+	 *
+	 * Description for this manager
+	 *
+	 * @author		Name of author
+	 * @module		manager.{managerid}
+	 * @package		{applicationid}
+	 */
 	
 	# -------------------------------------------------------------------------------------------------------------------
 	# constants
 		
 	# -------------------------------------------------------------------------------------------------------------------
-	# (class) mgManagerModuleForms
-	class mgManagerModuleAffiliates extends mgManagerExtension {
+	# (class) mgManagerModule{managerclass}
+	class mgManagerModule{managerclass} extends mgManagerExtension {
 	
 		# ---------------------------------------------------------------------------------------------------------------
 		# (public) process
@@ -20,52 +24,11 @@
 			// use manager controls
 			$this->manager->framework->usecomponent(COMPONENT_MANAGER);
 			// switch by request
-			switch($request) {
-				// (get)
-				case"get":
-					// get all users
-					$result = mgManagerGridDBData(DB_TABLE_AFFILIATES, function($item) {
-						// get meta
-						$meta = unserialize($item[DB_FIELD_META]);
-						// unset
-						unset($item[DB_FIELD_META]);
-						// assign
-						if(is_array($meta)) {
-							$item = array_merge($item, $meta);
-						}
-						// return item
-						return $item;
-					});
-					break;
-					
-				// (set) 
-				case "set":
-					// get data
-					$data = GetVar("affiliate", false);
-					// check user data
-					if(is_array($data)) {
-						// get object
-						$d = (object)$data;
-						// create database
-						$db = new mgDatabaseObject(DB_TABLE_AFFILIATES, isset($d->idstring)?$d->idstring:DB_CREATE);
-						// check db
-						if($db->result == DB_OK) {
-							// write
-							$db->Write($data);
-							// write data to buckets
-							$db->WriteFieldValue(DB_FIELD_META, $data);
-							// publish
-							$db->Publish();
-							// switch result
-							$result = true;
-						}
-					}				
-					break;					
-			
+			switch($request) {						
 				// (parameters)
 				case "parameters":
 					$result = array(
-						"affiliatetypes" => mgReadOption("lawsmart.affiliatetypes")
+						
 					);
 					break;
 			

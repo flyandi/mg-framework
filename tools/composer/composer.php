@@ -24,6 +24,37 @@
 	include("../../platform/library/controller.file.lib.php");
 	include("../../platform/library/controller.user.lib.php");
 	include("../../platform/library/controller.htmldom.lib.php");
+	include("../../platform/library/controller.xml.lib.php");
+	
+	# -----------------------------------------------------------------------------------
+	# deploy
+	
+	function deploy($params, $assets, $values) {
+		// cycle assets
+		foreach($assets as $location=>$content) {
+			// check file
+			if(file_exists($location)) { 
+				ConOut("%s already exists .. skipped", $location);
+			} else {
+				// modify content
+				foreach(array_merge((array)$params, $values) as $key=>$value) {
+					$content = str_replace(sprintf("{%s}", $key), $value, $content);
+				}
+				// deploy target
+				$targetdir = dirname($location);
+				@mkdir($targetdir, 777, true);
+				// write file
+				file_put_contents($location, $content);
+				// echo 
+				ConOut("%s .. written", $location);
+			}
+		}
+	}
+	
+	function loadobject($p) {
+		global $params;
+		return file_get_contents(sprintf("%ssource/%s", $params->object, $p));
+	}
 
 	# -----------------------------------------------------------------------------------
 	# Initialize
@@ -34,7 +65,7 @@
 	$cmAction = strtolower(ConVar(1));
 	
 	// verify application
-	$path = sprintf("../../applications/%s", $cmApp);
+	$path = sprintf("../../applications/%s/", $cmApp);
 	if(!is_dir($path)) {
 		ConOut("-- Application %s does not exists.", $cmApp);
 		exit;
@@ -46,6 +77,23 @@
 		exit;
 	}
 	
+	// load variables
+	$xml = new mgXML(file_get_contents(sprintf("%sapplication.xml", $path)));
+	
+	// create variables
+	$params = array(
+		"path" => $path,
+		"object" => $object
+	);
+	
+	foreach($xml->variables->variable as $v) {
+		$params[strtolower(str_replace(Array("_"), "", (string) $v["name"]))] = (string) $v["value"];
+	}
+	
+	// finalize
+	$params = (object) $params;
+	
+	
 	# -----------------------------------------------------------------------------------
 	# Compose
 	
@@ -54,7 +102,7 @@
 	
 	// check function
 	if(function_exists("objectcreate")) {
-		objectcreate();
+		objectcreate($params);
 	} else {
 		ConOut("-- Object %s does not has a valid header.", $cmAction);
 	}
