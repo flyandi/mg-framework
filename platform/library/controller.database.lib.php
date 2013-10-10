@@ -120,6 +120,10 @@
 	define("DB_FORMAT_BLOB", 0);
 	define("DB_FORMAT_JSON", 1);
 	
+	// search modes
+	define("DB_SEARCHMODE_SOUNDEX", 1);
+	define("DB_SEARCHMODE_FIELDS", "fields");
+	
 	
 	# -------------------------------------------------------------------------------------------------------------------
 	# (class) mgDatabase, manages the database service
@@ -181,7 +185,9 @@
 		public $result = DB_ERROR;		// result, status of the last operation
 		public $lastsql = "";			// last sql 
 		public $forcewrite = Array();	// force write flag
-		public $rows;					// storage for all current rows		
+		public $rows;					// storage for all current rows	
+		public $searchmode;				// search mode
+		public $searchmodeparams;		// search mode params
 	
 		# -------------------------------------------------------------------------------------------------------------------
 		# (construct)
@@ -350,7 +356,33 @@
 						if(is_array($this->fields)) {
 							foreach($this->fields as $fn) {
 								if(!in_array($fn, Array(DB_FIELD_PASSWORD, DB_FIELD_SERVICE, DB_FIELD_HISTORY))) {
-									$f[$fn] = sprintf("%%%s%%", $this->search);
+									// build by searchmode
+									switch($this->searchmode) {
+										// (soundex)
+										case DB_SEARCHMODE_SOUNDEX:
+											// init
+											$allow = true;
+											// check range
+											if(is_array($this->searchmodeparams)) {
+												// switch by true
+												switch(true) {
+													case isset($this->searchmodeparams[DB_SEARCHMODE_FIELDS]):
+														// allowed fields
+														$allow = in_array($fn, $this->searchmodeparams[DB_SEARCHMODE_FIELDS]);
+														break;
+												}
+											}
+											// assign
+											if($allow) {
+												$f[] = sprintf("mgSearchSoundsLike('%s', %s, ' ')", $this->search, $fn);
+											}
+											break;
+											
+										// (normal/like)
+										default:
+											$f[$fn] = sprintf("%%%s%%", $this->search);
+											break;
+									}
 								}
 							}
 						}
@@ -359,11 +391,25 @@
 					}
 					// test f
 					if(is_array($f)&&count($f)!=0) {
-						// generate result
-						$fields = sprintf("(%s)%s", 
-							$this->__buildquery($f, " OR ", " LIKE "), 
-							is_array($this->references)&&count($this->references)!=0?sprintf(" AND (%s)", $this->__buildquery($this->references)):""
-						);
+						// prepare references
+						$ref = is_array($this->references)&&count($this->references)!=0?sprintf(" AND (%s)", $this->__buildquery($this->references)):"";
+						// switch by mode
+						switch($this->searchmode) {
+							// (soundex)
+							case DB_SEARCHMODE_SOUNDEX:
+								$fields = sprintf("(%s)%s", 
+									implode(" OR ", $f),
+									$ref
+								);	
+								break;
+							// default
+							default:
+								$fields = sprintf("(%s)%s", 
+									$this->__buildquery($f, " OR ", " LIKE "), 
+									$ref
+								);
+								break;
+						}
 						// finalize
 						break;
 					}
@@ -910,7 +956,10 @@
 	
 		# -------------------------------------------------------------------------------------------------------------------
 		#(constructor)			
-		public function __construct($table, $search, $references = false, $sort = false, $limit = false) {
+		public function __construct($table, $search, $references = false, $sort = false, $limit = false, $searchmode = false, $searchparams = false) {
+			// set searchmode
+			$this->searchmode = $searchmode;
+			$this->searchmodeparams = $searchparams;
 			// perform constructor
 			parent::__construct($table, DB_FULLTEXTSEARCH, $references, $sort, $limit, $search);
 		}		
