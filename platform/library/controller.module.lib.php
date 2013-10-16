@@ -361,10 +361,12 @@
 			$filename = sprintf("%s/%s", dirname($this->location), $b);
 			// check filename
 			if(file_exists($filename)) { $b = file_get_contents($filename);}
-			// format buffer
-			$b = str_replace("  ", "", str_replace("\t", "", str_replace("\n", "", $b)));
 			// strip all comments
-			$b = preg_replace("|/\*.*?\*/|", "", $b);
+			$b = mgStripComments($b);
+			// format buffer
+			$b = str_replace(array("  ", "\t", "\r\n", "\r", "\n"), "", $b);			
+			// second pass
+			$b = mgStripComments($b);
 			// find translators
 			preg_match_all(sprintf("/%s%s(.*?)%s/", TEMPLATE_FIELD_BEGIN, TEMPLATE_FIELD_TRANSLATE, TEMPLATE_FIELD_END), $b, $matches, PREG_PATTERN_ORDER);
 			// check result

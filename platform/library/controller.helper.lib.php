@@ -873,4 +873,16 @@
 		return $rf->isClosure();
 	}
 	
+	# -------------------------------------------------------------------------------------------------------------------
+	# Programming
+	
+	# (mgStripComments) removes all known comments
+	function mgStripComments($buffer) {
+		// result
+		$result = "";
+		// strip all comments
+		$buffer = preg_replace("|/\*.*?\*/|", "", $buffer);	
+		// strip inline comments
+		return preg_replace('#^\s*//.+$#m', "", $buffer);
+	}
 	
