@@ -18,7 +18,7 @@
 	define("FRAMEWORK_SESSION", "@frameworksession");
 	
 	// Controllers
-	define("FRAMEWORK_DEFAULTCONTROLLERS", "database,module,user,template,smtp");	
+	define("FRAMEWORK_DEFAULTCONTROLLERS", "database,module,user,template,smtp,adopter");	
 	
 	// Framework Project Constants
 	define("FRAMEWORK_PATH", "../../platform/");

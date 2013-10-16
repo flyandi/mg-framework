@@ -94,3 +94,8 @@ var mgArrayAverage = function(a) {
 var mgIsArray = function(o) {
 	return Object.prototype.toString.call(o) === '[object Array]';
 };
+
+/** (mgArraySlice) */
+var mgArrayPageSlice = function(o, p, ip) {
+	return o.slice(p * ip, (p * ip) + ip);
+};

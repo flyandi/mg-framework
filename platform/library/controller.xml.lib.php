@@ -88,6 +88,16 @@
 			}
 			return $result;
 		}
+		
+		# ---------------------------------------------------------------------------------------------------------------
+		# (public) toAttributesArray, returns all attributes as array
+		public function toAttributesArray() {
+			$r = array();
+			foreach($this->attributes() as $name=>$value) {
+				$r[(string) $name] = (string) $value;
+			}
+			return $r;
+		}
 	}
 	
 	

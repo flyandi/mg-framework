@@ -1,6 +1,6 @@
 drop function if exists mgSearchSoundsLike;
 delimiter $$
-create function mgSearchSoundsLike (needle varchar(1024), haystack text, splitChar varchar(1)) returns tinyint
+create function mgSearchSoundsLike(needle varchar(1024), haystack text, splitChar varchar(1)) returns tinyint
   deterministic
   begin
     declare spacePos int;

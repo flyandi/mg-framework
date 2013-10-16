@@ -1164,9 +1164,9 @@
 						break;
 				}
 			}
-			// sort assets
-			sort($assets);
-			sort($libassets);
+			// sort assets, why?
+			//sort($assets);
+			//sort($libassets);
 			// generate assets
 			$assets = array_merge($libassets, $assets);
 			// load assets

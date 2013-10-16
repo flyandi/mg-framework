@@ -665,7 +665,7 @@
 				$fields!==false?sprintf("WHERE %s", $fields):""
 			);
 			// execute statement
-			$sql = mysql_query($query) or DieCriticalError($query);
+			$sql = mysql_query($query) or DieCriticalError("Error: ".mysql_error(), $query);
 			// check result
 			if(mysql_num_rows($sql)==0) return 0;
 			// return
@@ -1096,7 +1096,9 @@
 		# -------------------------------------------------------------------------------------------------------------------
 		# __call
 		public function __call($name, $args) {
-			switch(strtolower($name)) {
+			switch(strtolower($name)) {	
+				// (getall)
+				case "getall": return $this->database; break;
 				// toArray() 
 				case "toarray": return is_array($this->database)?$this->database:Array(); break;
 				// Exists, checks if the item exists
