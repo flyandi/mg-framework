@@ -878,11 +878,13 @@
 	
 	# (mgStripComments) removes all known comments
 	function mgStripComments($buffer) {
-		// result
-		$result = "";
 		// strip all comments
 		$buffer = preg_replace("|/\*.*?\*/|", "", $buffer);	
 		// strip inline comments
-		return preg_replace('#^\s*//.+$#m', "", $buffer);
+		$buffer = preg_replace('#^\s*//.+$#m', "", $buffer);
+		// strip same line comments (not working)
+		// $buffer = preg_replace("@(?<!http:)//.*@","", $buffer);
+		// return buffer
+		return $buffer;
 	}
 	
