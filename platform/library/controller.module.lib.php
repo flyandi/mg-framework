@@ -356,11 +356,22 @@
 		
 		# ---------------------------------------------------------------------------------------------------------------
 		# (toScript)
-		public function asScript($b) {
-			// format filename
-			$filename = sprintf("%s/%s", dirname($this->location), $b);
-			// check filename
-			if(file_exists($filename)) { $b = file_get_contents($filename);}
+		public function asScript($stack) {
+			// initialize
+			$b = "";
+			$stack = is_array($stack)?$stack:array($stack);
+			// load buffer
+			foreach($stack as $s) {
+				// prepare file buffer
+				$fb = array($s, sprintf("%s/%s", dirname($this->location), $s));
+				// find file
+				foreach($fb as $f) {
+					if(file_exists($f)) {
+						$b .= file_get_contents($f);
+						break;
+					}
+				}
+			}
 			// strip all comments
 			$b = mgStripComments($b);
 			// format buffer

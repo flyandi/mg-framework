@@ -90,10 +90,15 @@
 	# -------------------------------------------------------------------------------------------------------------------
 	# (class) mgManagerModule, manages a single module
 	class mgManagerModule extends mgModule {
-		
+	
 		# ---------------------------------------------------------------------------------------------------------------
 		# (private) stack
-		public $script = false;						
+		private $jsstack = array();
+		
+		# ---------------------------------------------------------------------------------------------------------------
+		# (public) stack
+		public $script = false;					
+		
 
 		
 		# ---------------------------------------------------------------------------------------------------------------
@@ -107,6 +112,26 @@
 			$resources = $this->asSetting("settings", "resources");
 			if(strlen($resources)>0) {
 				$this->manager->framework->resources->register($resources);
+			}
+			// compile includes
+			if(isset($this->xml->includes->lib)) {
+				// cycle
+				foreach($this->xml->includes->lib as $lib) {
+					// get attributes
+					$lib = $lib->attributes();
+					// create assets
+					$filename = sprintf("%s/%s", dirname($this->location), DefaultValue((string)@$lib->src, false));
+					// check
+					if(file_exists($filename)) {
+						// assign
+						switch(DefaultValue((string)@$lib->type, false)) {
+							// javascript include
+							case "js": $this->jsstack[] = $filename; break;
+							// css include
+							case "css": $this->manager->framework->resources->ascss(file_get_contents($filename)); break;
+						}
+					}
+				}
 			}
 		}
 		
@@ -218,7 +243,7 @@
 						"moduleid"=>$this->id,
 						"modulevisible"=>$this->asBool("settings", "visible"),
 						"modulename"=>$this->name,
-						"modulescript"=>$this->asScript(MANAGER_FRONTSCRIPT),
+						"modulescript"=>$this->asScript(array_merge(array(MANAGER_FRONTSCRIPT), $this->jsstack)),
 						"moduleactions"=>$this->getactions(false, $requiredrole),
 						"moduleviews"=>$this->getviews(),
 					);				
