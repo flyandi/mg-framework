@@ -303,4 +303,3 @@ if (ftp_chmod($conn_id, 0666, $ftp_path) !== false) {
 ftp_close($conn_id);*/
 
 
-?>

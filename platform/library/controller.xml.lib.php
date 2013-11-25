@@ -11,7 +11,7 @@
 	*/
 	# -------------------------------------------------------------------------------------------------------------------
 	# Constants
-	define("XML_EMPTY", "<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+	define("XML_EMPTY", "<?xml version=\"1.0\" encoding=\"UTF-8\"");
 
 	# -------------------------------------------------------------------------------------------------------------------
 	# (class) mgXML, reads/writes an xml file
@@ -138,5 +138,18 @@
 		}
 		return (string) $xml;
 	}
+	
+	# -------------------------------------------------------------------------------------------------------------------
+	# (function) mgArrayToXML
+	function mgArrayToXML($a, $root = "array") {
+		// initialize
+		$result = new mgXML(sprintf("<%s/>", $root));
+		// flip
+		$a = array_flip($a);
+		// walk array
+		array_walk_recursive($a, array ($result, 'addChild'));
+		// return 
+		return $result->asXML();
+	}
 
-?>
+

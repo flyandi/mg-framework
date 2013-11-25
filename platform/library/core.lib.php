@@ -493,4 +493,3 @@
 		return strtolower($s)===$s;
 	}
 		
-?>

@@ -147,4 +147,3 @@
             imagejpeg($img,$this->file,100);
         }
     }
-?>

@@ -118,4 +118,3 @@
 		$m = new mgHTTPController($url);
 		return $m->GetString();
 	}
-?>

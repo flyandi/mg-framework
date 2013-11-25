@@ -33,7 +33,7 @@
 	define("SEO_SITEMAP_COMPACT", ".gz");
 	define("SEO_SITEMAP_URLLIMIT", 50000);
 	
-	define("SEO_SITEMAP_HEADER", "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s\n</urlset>");
+	define("SEO_SITEMAP_HEADER", "<?xml version=\"1.0\" encoding=\"utf-8\"\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s\n</urlset>");
 	
 	# ---------------------------------------------------------------------------------------------------------------
 	# (class) mgSEOSitemap, handles a SEO Sitemap
@@ -88,7 +88,7 @@
 			// save compressed
 			file_put_contents(sprintf("%s%s", $filename, SEO_SITEMAP_COMPACT), $um);
 			// write index file
-			file_put_contents($filename, sprintf("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s</sitemapindex>", 
+			file_put_contents($filename, sprintf("<?xml version=\"1.0\" encoding=\"utf-8\"\n<sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s</sitemapindex>", 
 				sprintf("<sitemap>\n<loc>%s</loc>\n<lastmod>%s</lastmod>\n</sitemap>\n",
 					sprintf("http://%s/%s%s", $this->basepath?$this->basepath:"", SEO_SITEMAP_FILENAME, SEO_SITEMAP_COMPACT),
 					date("Y-m-d")
@@ -133,7 +133,7 @@
 				}
 			}
 			// save index file
-			file_put_contents($this->filename, sprintf("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s</sitemapindex>", 
+			file_put_contents($this->filename, sprintf("<?xml version=\"1.0\" encoding=\"utf-8\"\n<sitemapindex xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n%s</sitemapindex>", 
 				$sxml
 			));
 			// return status
@@ -203,4 +203,3 @@
 		}
 	}
 	
-?>

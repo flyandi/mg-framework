@@ -328,4 +328,3 @@
 		return $r->getall();
 	}
 	
-?>

@@ -305,4 +305,3 @@
 	define("ETAG", "@ETAG");
 
 	
-?>

@@ -174,4 +174,3 @@
 		$a->RecordEvent($event);
 	}
 	
-?>

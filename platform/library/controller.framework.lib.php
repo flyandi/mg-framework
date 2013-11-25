@@ -1164,9 +1164,9 @@
 						break;
 				}
 			}
-			// sort assets, why?
-			//sort($assets);
-			//sort($libassets);
+			// sort assets, why? Because we need to load it by file name order!
+			sort($assets);
+			sort($libassets);
 			// generate assets
 			$assets = array_merge($libassets, $assets);
 			// load assets
@@ -1804,4 +1804,3 @@
 			DieCriticalError("Framework Application Error");
 		}
 	}
-?>

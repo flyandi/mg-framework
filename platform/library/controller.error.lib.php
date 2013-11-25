@@ -23,4 +23,3 @@
 	define("DEBUG_LOG", "../../log/debug.log");
 		
 	
-?>

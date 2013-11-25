@@ -90,4 +90,3 @@
 		}
 		return trim($hour);
 	}
-?>

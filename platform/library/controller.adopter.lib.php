@@ -42,4 +42,3 @@
 			return call_user_func_array(Array($this->adopted, $name), $args);
 		}
 	}
-?>

@@ -489,4 +489,3 @@
 			return $result;
 		}
 	}		
-?>

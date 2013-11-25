@@ -68,4 +68,3 @@
 		// close
 		fclose($f);
 	}
-?>

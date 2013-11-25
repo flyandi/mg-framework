@@ -17,6 +17,36 @@
 	# Constants Declaration	
 	define("MANAGER_GRID_DEFAULT", "default");
 	
+	
+	# -------------------------------------------------------------------------------------------------------------------
+	# (mgManagerDeleteData) removes data
+	function mgManagerDeleteData($table, $variable = "items", $softdelete = false, $softdeletefield = DB_FIELD_ENABLED) {
+		// initialize
+		$items = GetVar($variable, false);
+		$deleted = 0;
+		// check
+		if(is_array($items)) {
+			// cycle
+			foreach($items as $id=>$name) {
+				// create item
+				$db = new mgDatabaseObject($table, $id);
+				// check db
+				if($db->result == DB_OK) {
+					// softdelete
+					if($softdelete) {
+						$db->write($softdeletefield, DISABLED, true);
+					} else {
+						$db->delete();
+					}
+					// update
+					$deleted++;
+				}
+			}
+		}
+		// return
+		return $deleted;
+	}
+	
 	# -------------------------------------------------------------------------------------------------------------------
 	# (mgManagerGridData) creates the data for a manager grid
 	function mgManagerGridData($data, $page = 0, $totalcount=false) {
@@ -158,5 +188,3 @@
 		// return result
 		return $result;
 	}
-	
-?>
