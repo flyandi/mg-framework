@@ -560,9 +560,9 @@
 			}
 			// pagecache cookie
 			if(mgHasPageCache()&&$this->option(HEADER_NOCOOKIES)!==true && $this->issecured()) {
+				// set cookie
 				mgPageCacheSetCookie($this->issecured());
 			}
-			
 		}
 		
 		# ---------------------------------------------------------------------------------------------------------------

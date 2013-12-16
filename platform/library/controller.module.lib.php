@@ -181,7 +181,9 @@
 							
 						// service is json
 						case MODULE_RESULT_JSON: 
+							// emit headers
 							$this->framework->__emitheaders();
+							// emit data
 							echo json_encode(is_array($module->content)?$module->content:Array($module->content));
 							exit;
 							break;

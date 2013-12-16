@@ -58,6 +58,7 @@
 	define("DB_FIELD_MODE", "mode");
 	define("DB_FIELD_SECURED", "secured");
 	define("DB_FIELD_CREATED", "created");
+	define("DB_FIELD_UPDATED", "updated");
 	define("DB_FIELD_HISTORY", "history");
 	define("DB_FIELD_PATH", "path");
 	define("DB_FIELD_AUTHOR", "idauthor");
