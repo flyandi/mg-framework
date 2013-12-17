@@ -2,7 +2,7 @@
 	/* 
 		(mg)framework Version 5.0
 		
-		Copyright (c) 1999-2013 eikonlexis LLC. All rights reserved.
+		Copyright (c) 1999-2011 eikonlexis LLC. All rights reserved.
 		
 		This program is protected by copyright laws and international treaties.
 		Unauthorized reproduction or distribution of this program, or any 
