@@ -246,7 +246,7 @@
 		
         // check if directory exists, otherwise create
 		$directory = dirname($directory?$directory:$tempfilename);
-        if(!file_exists($directory)){mkdir($directory);}
+        if(!file_exists($directory)){mgCreateDirectory($directory);}
        
         // process file upload
 		$filename=$directory."/".basename($filename?$filename:CreateGUID()); //mgFileInfo($fileid, "name")
@@ -270,7 +270,7 @@
 					$fna = ($directory?$directory:dirname($filename)).zip_entry_name($zip_entry);
 					// get directory contents
 					$fnd = dirname($fna."/");
-					if(!file_exists($fnd)){@mkdir($fnd);}
+					if(!file_exists($fnd)){mgCreateDirectory($fnd);}
 					if(basename($fna)!="") {
 						$fh = @fopen($fna, "w");
 						@fwrite($fh, $buf);
@@ -398,7 +398,7 @@
     # (function) mgCopyDirectory
 	function mgCopyDirectory($src,$dst) {
 		$dir = opendir($src);
-		@mkdir($dst);
+		mgCreateDirectory($dst);
 		while(false !== ( $file = readdir($dir)) ) {
 			if (( $file != '.' ) && ( $file != '..' )) {
 				if ( is_dir($src . '/' . $file) ) {
@@ -412,6 +412,17 @@
 		closedir($dir);
 	} 
 	
+	
+	# -------------------------------------------------------------------------------------------------------------------
+    # (function) mgCreateDirectory
+	function mgCreateDirectory($path, $recursive = true, $mode = 0777) {
+		// retain mask
+		$o = umask(0);
+		// create dir
+		@mkdir($path, $mode, $recursive);
+		// reset mask
+		umask($o);
+	}
 	
 	# -------------------------------------------------------------------------------------------------------------------
 	# File functions

@@ -330,7 +330,7 @@
 	# -------------------------------------------------------------------------------------------------------------------
 	# GetRemoteAddress
 	function GetRemoteAddress(){
-		$rm=Array("HTTP_CLIENT_IP", "HTTP_X_FORWARDED", "HTTP_FORWARDED_FOR", "HTTP_X_FORWARDED");
+		$rm=Array("HTTP_CLIENT_IP", "HTTP_X_FORWARDED", "HTTP_FORWARDED_FOR", "HTTP_X_FORWARDED_FOR", "HTTP_X_CLUSTER_CLIENT_IP");
 		foreach($rm as $r){if(isset($_SERVER[$r])){return @$_SERVER[$r];}}
 		return @$_SERVER["REMOTE_ADDR"];
 	}
